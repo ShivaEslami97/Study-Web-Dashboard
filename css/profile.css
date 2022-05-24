@@ -1,0 +1,28 @@
+.profile {
+  margin-bottom: 2rem;
+}
+.profile__header {
+  justify-content: space-between;
+  width: 100%;
+}
+.profile__header h3 {
+  color: var(--clr-base-dk);
+  font-size: clamp(1.3rem, 3.7vw - 0.3rem, 2rem);
+}
+.profile__body {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  text-align: center;
+  color: var(--clr-base-dk);
+}
+.profile__body img {
+  border-radius: 50%;
+}
+.profile__info h4 i {
+  color: var(--clr-primary);
+}
+.date-picker {
+  display: grid;
+  place-items: center;
+}

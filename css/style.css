@@ -1,0 +1,14 @@
+.app__wrapper {
+  margin-top: 3rem;
+}
+.main {
+  padding-left: 22rem;
+  margin-top: 0rem;
+  display: grid;
+  grid-template-columns: 1.5fr 0.9fr;
+  width: 100%;
+  gap: 4rem;
+}
+.side-content {
+  padding-right: 2rem;
+}

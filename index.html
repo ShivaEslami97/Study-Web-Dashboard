@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Web Dashboard</title>
+    <link rel="shortcut icon" href="images/Web Study Dashboard Favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+
+<body>
+    <div class="container app__wrapper">
+        <!-- Left sidebar nav start -->
+        <nav class="nav">
+            <div class="logo">
+                <div class="square__shapes">
+                    <i class="mdi mdi-square square--dark"></i>
+                    <i class="mdi mdi-square square--light"></i>
+                </div>
+                <span>Academy</span>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link active" href="#">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Courses</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">
+                        <i class="fa-solid fa-comment"></i>
+                        Chats</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Grades</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Schedule</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        Settings</a></li>
+            </ul>
+        </nav>
+        <!-- Left sidebar nav end -->
+
+        <!-- main start -->
+        <main class="main">
+            <div class="main-content">
+                <!-- page top header -->
+                <header class="header flex">
+                    <div class="header__title">
+                        <h2>Dashboard</h2>
+                    </div>
+                    <div class="header__action flex">
+                        <div class="header__search form-group">
+                            <input class="form-input" placeholder="Search" type="search">
+                            <i class="mdi mdi-magnify"></i>
+                        </div>
+                        <div class="header__notification">
+                            <div class="header-link notification-link" href="#">
+                                <i class="mdi mdi-bell-badge-outline"></i>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <section class="new-courses">
+                    <h3 class="section-heading">New Courses</h3>
+                    <div class="grid courses__wrapper">
+                        <div class="courses__item">
+                            <div class="courses__media courses--one">
+                                <img src="images/2988-ai.png" alt="courses image">
+                            </div>
+                            <div class="courses__content">
+                                <h4>Geoghraphy</h4>
+                                <span>12 lessons </span>
+                            </div>
+                        </div>
+                        <div class="courses__item">
+                            <div class="courses__media courses--two">
+                                <img src="images/Coding-amico.svg" alt="courses image">
+                            </div>
+                            <div class="courses__content">
+                                <h4>JavaScript Course</h4>
+                                <span>15 lessons </span>
+                            </div>
+                        </div>
+                        <div class="courses__item">
+                            <div class="courses__media courses--three">
+                                <img src="images/1853-ai.svg" alt="courses image">
+                            </div>
+                            <div class="courses__content">
+                                <h4>Photography Course</h4>
+                                <span>8 lessons </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- page left sidebar -->
+            <aside class="side-content">
+                <div class="profile">
+                    <div class="profile__header flex">
+                        <h3>Profile</h3>
+                        <div class="header-link notification-link" href="#">
+                            <i class="mdi mdi-account-edit-outline"></i>
+                        </div>
+                    </div>
+                    <div class="profile__body">
+                        <img src="images/avt-5.jpg" alt="profile image">
+                        <div class="profile__info">
+                            <h4>Shiva Eslami
+                                <i class="mdi mdi-check-circle"></i>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="date-picker">
+                    <div id="inline">
+                    </div>
+                </div>
+            </aside>
+
+        </main>
+        <!-- main  end -->
+    </div>
+    <script src="js/date-picker.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
