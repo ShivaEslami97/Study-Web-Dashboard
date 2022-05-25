@@ -19,10 +19,19 @@
 .profile__body img {
   border-radius: 50%;
 }
-.profile__info h4 i {
+.profile__name {
+  font-size: var(--font-size-1xl);
+  margin-bottom: 5px;
+}
+.profile__level {
+  color: var(--clr-base-lt);
+  font-weight: var(--font-semi-bold);
+}
+.profile__name i {
   color: var(--clr-primary);
 }
 .date-picker {
   display: grid;
-  place-items: center;
+  place-items: flex-start;
+  margin-bottom: 2rem;
 }

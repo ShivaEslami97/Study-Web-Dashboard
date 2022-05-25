@@ -28,7 +28,7 @@
   -webkit-box-flex: 1;
   flex: 1;
   border: 0;
-  border-radius: 0.25rem;
+  border-radius: 50%;
   cursor: default;
   text-align: center;
   -webkit-touch-callout: none;
@@ -51,18 +51,19 @@
   display: -webkit-box;
   display: flex;
 }
-.datepicker-grid {
+/* .datepicker-grid {
   flex-wrap: wrap;
-}
+} */
 .datepicker-view .dow,
 .datepicker-view .days .datepicker-cell {
-  flex-basis: 13.6%;
+  width: 4rem;
   height: 4rem;
   place-items: center;
   display: grid;
 }
-.datepicker-view.datepicker-grid .datepicker-cell {
-  flex-basis: 25%;
+.datepicker-view.months.datepicker-grid,
+.datepicker-view.years.datepicker-grid {
+  gap: 1rem;
 }
 .datepicker-view .week,
 .datepicker-cell {
@@ -166,7 +167,9 @@
   }
 }
 .datepicker-grid {
-  width: 28.75rem;
+  width: 34.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
 }
 @media (max-width: 22.5rem) {
   .calendar-weeks + .days .datepicker-grid {
@@ -174,15 +177,16 @@
   }
 }
 .datepicker-cell:not(.disabled):hover {
-  background-color: #f9f9f9;
+  background-color: #8a70d6;
   cursor: pointer;
+  color: #fff;
 }
 .datepicker-cell.focused:not(.selected) {
   background-color: #8a70d6;
   border-radius: 50%;
   color: #f9f9f9;
 }
-.datepicker-cell.selected,
+.datepicker-cell.selected.focused,
 .datepicker-cell.selected:hover {
   background-color: #8a70d6;
   color: #fff;
@@ -244,7 +248,8 @@
   background-color: #dadfe4;
 }
 .datepicker-view.datepicker-grid .datepicker-cell {
-  height: 3.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   display: grid;
   place-items: center;
 }
@@ -257,5 +262,5 @@
 }
 .datepicker-cell.month.focused,
 .datepicker-cell.year.focused {
-  border-radius: 1rem;
+  border-radius: 50%;
 }

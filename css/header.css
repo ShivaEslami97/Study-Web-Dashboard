@@ -44,4 +44,5 @@
   place-content: center;
   border-radius: var(--border-radius-2sm);
   color: var(--clr-base);
+  cursor: pointer;
 }

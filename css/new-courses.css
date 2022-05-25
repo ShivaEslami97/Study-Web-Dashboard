@@ -1,42 +1,85 @@
-.courses__wrapper {
+.new-courses__wrapper {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
 }
-.courses__item {
+.new-courses__item {
   padding: 1rem;
   border-radius: var(--border-radius-lg);
 }
-.courses__item:nth-child(1) {
+.new-courses__item:nth-child(1) {
   background-color: var(--clr-primary-lt);
 }
-.courses__item:nth-child(2) {
+.new-courses__item:nth-child(2) {
   background-color: var(--clr-orange-ltr);
 }
-.courses__item:nth-child(3) {
+.new-courses__item:nth-child(3) {
   background-color: var(--clr-blue-ltr);
 }
-.courses__media {
+.new-courses__media {
   border-radius: var(--border-radius-lg);
+  display: -ms-grid;
   display: grid;
   place-items: center;
   margin-bottom: 1rem;
 }
-.courses__media img {
+.new-courses__media img {
   height: 15rem;
+  -o-object-fit: cover;
   object-fit: cover;
 }
-.courses--one {
+.new-courses--one {
   background-color: var(--clr-primary);
 }
-.courses--two {
+.new-courses--two {
   background-color: var(--clr-orange);
 }
-.courses--three {
+.new-courses--three {
   background-color: var(--clr-blue-lt);
 }
-.courses__content {
-  display: flex;
+.new-courses__content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 0.8rem;
   color: var(--clr-base-dk);
+}
+.new-courses__footer {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.new-courses__avatars img {
+  height: 4rem;
+  border-radius: 50%;
+}
+.new-courses__avatars-link:nth-child(1) {
+  z-index: 3;
+}
+.new-courses__avatars-link:nth-child(2) {
+  margin-left: -1rem;
+  z-index: 2;
+}
+.new-courses__avatars-link:nth-child(3) {
+  margin-left: -1rem;
+  z-index: 1;
+}
+.btn__courses {
+  padding: 1rem 1.5rem;
+}
+.new-courses__item:nth-child(1) .new-courses__footer .btn {
+  background-color: var(--clr-primary);
+}
+.new-courses__item:nth-child(2) .new-courses__footer .btn {
+  background-color: var(--clr-orange);
+}
+.new-courses__item:nth-child(3) .new-courses__footer .btn {
+  background-color: var(--clr-blue-lt);
+}
+.new-courses__name {
+  color: var(--clr-base-dk);
+}
+.new-courses__lessons {
+  color: var(--clr-base);
 }
