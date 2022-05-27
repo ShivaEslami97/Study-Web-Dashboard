@@ -30,6 +30,9 @@
 .new-courses--one {
   background-color: var(--clr-primary);
 }
+.new-courses--two img {
+  transform: rotate(-9deg);
+}
 .new-courses--two {
   background-color: var(--clr-orange);
 }
@@ -51,8 +54,18 @@
   margin-top: 4rem;
 }
 .new-courses__avatars img {
-  height: 4rem;
+  height: 3.5rem;
   border-radius: 50%;
+  -webkit-box-shadow: -2px 2px 4px 0px rgb(0 0 0 / 20%);
+  box-shadow: -2px 2px 4px 0px rgb(0 0 0 / 20%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.new-courses__avatars img:hover {
+  -webkit-transform: translateY(-4px) scale(1.02);
+  transform: translateY(-4px) scale(1.02);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .new-courses__avatars-link:nth-child(1) {
   z-index: 3;
@@ -63,7 +76,7 @@
 }
 .new-courses__avatars-link:nth-child(3) {
   margin-left: -1rem;
-  z-index: 1;
+  z-index: 2;
 }
 .btn__courses {
   padding: 1rem 1.5rem;

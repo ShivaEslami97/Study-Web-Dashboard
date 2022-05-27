@@ -21,26 +21,45 @@
                 </div>
                 <span>Academy</span>
             </div>
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link active" href="#">
-                        <i class="fa-solid fa-house"></i>
-                        Dashboard</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        Courses</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">
-                        <i class="fa-solid fa-comment"></i>
-                        Chats</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">
-                        <i class="fa-solid fa-chart-column"></i>
-                        Grades</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        Schedule</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">
-                        <i class="fa-solid fa-gear"></i>
-                        Settings</a></li>
-            </ul>
+            <div class="nav__scrollbox scrollbox">
+                <div class="nav__side">
+                    <!-- nav -->
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link active" href="#">
+                                <i class="fa-solid fa-house"></i>
+                                Dashboard</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                Courses</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">
+                                <i class="fa-solid fa-comment"></i>
+                                Chats</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">
+                                <i class="fa-solid fa-chart-column"></i>
+                                Grades</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                Schedule</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">
+                                <i class="fa-solid fa-gear"></i>
+                                Settings</a></li>
+                    </ul>
+                    <!-- subscription -->
+                    <div class="nav__action">
+                        <div class="nav__action-media">
+                            <img src="images/working.png" alt="Premium subscription image">
+                        </div>
+                        <h4 class="nav__action-title">Premium subscription</h4>
+                        <p class="nav__action-description">Buy Premium and get access to new courses</p>
+                        <button class="btn btn__primary nav__action-btn" type="button">
+                            <span>More detailed</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </nav>
         <!-- Left sidebar nav end -->
 
@@ -48,7 +67,7 @@
         <main class="main">
             <div class="main__content">
                 <!-- page top header -->
-                <header class="header flex">
+                <header id="header" class="header flex">
                     <div class="header__title">
                         <h2>Dashboard</h2>
                     </div>
@@ -58,7 +77,7 @@
                             <i class="mdi mdi-magnify"></i>
                         </div>
                         <div class="header__notification">
-                            <div class="header-link notification-link" href="#">
+                            <div class="btn__secondary notification-link" href="#">
                                 <i class="mdi mdi-bell-badge-outline"></i>
                             </div>
                         </div>
@@ -93,7 +112,7 @@
                         <!-- course item -->
                         <div class="new-courses__item">
                             <div class="new-courses__media new-courses--two">
-                                <a href="#"><img src="images/Coding-amico.svg" alt="courses image"></a>
+                                <a href="#"><img src="images/program.png" alt="courses image"></a>
                             </div>
                             <div class="new-courses__content flex">
                                 <h4 class="new-courses__name"><a href="#">JavaScript Course</a></h4>
@@ -115,7 +134,7 @@
                         <!-- course item -->
                         <div class="new-courses__item">
                             <div class="new-courses__media new-courses--three">
-                                <a href=""><img src="images/1853-ai.svg" alt="new-courses image"></a>
+                                <a href=""><img src="images/3.png" alt="new-courses image"></a>
                             </div>
                             <div class="new-courses__content flex">
                                 <h4 class="new-courses__name"><a href="#">Photography Course</a></h4>
@@ -236,7 +255,7 @@
                 <div class="profile">
                     <div class="profile__header flex">
                         <h3>Profile</h3>
-                        <div class="header-link notification-link" href="#">
+                        <div class="btn__secondary notification-link" href="#">
                             <i class="mdi mdi-account-edit-outline"></i>
                         </div>
                     </div>

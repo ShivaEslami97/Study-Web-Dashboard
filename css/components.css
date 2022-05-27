@@ -15,9 +15,9 @@
   -ms-border-radius: var(--border-radius-2sm);
   -o-border-radius: var(--border-radius-2sm);
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
   border: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,59 +35,94 @@
 }
 
 .btn__primary {
-  color: var(--white-color);
-  background-color: var(--main-color);
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
   position: relative;
   overflow: hidden;
   z-index: 0;
 }
+.btn__primary:hover,
+.btn__primary:active {
+  transform: translateY(-3px);
+  box-shadow: rgb(0 0 0 / 10%) 0 4px 12px;
+}
+.btn__primary::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  height: 0px;
+  width: 100%;
+  background: rgb(86 76 211);
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgb(86 76 211) 94.3%
+  );
+  transition: 0.3s;
+}
+.btn__primary .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  width: 3em;
+  position: absolute;
+  top: 3em;
+  right: 0;
+  opacity: 0;
+  transition: 0.4s;
+}
+.btn__primary span {
+  position: relative;
+}
+.btn__primary:hover::before {
+  height: 100%;
+}
 
-.btn__primary:before {
+.btn__primary:hover .icon {
+  top: 0;
+  opacity: 1;
+}
+.btn__secondary {
+  width: 4.5rem;
+  height: 4.5rem;
+  box-shadow: 0px 2px 3px rgb(4 4 7 / 10%);
+  font-size: var(--font-size-3xl);
+  display: grid;
+  place-content: center;
+  border-radius: var(--border-radius-2sm);
+  color: var(--clr-base);
+  cursor: pointer;
+  transition: all 0.5 ease;
+  position: relative;
+}
+.btn__secondary i {
+  position: relative;
+}
+.btn__secondary:before {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 40rem;
-  height: 40rem;
-  margin: auto;
-  background: var(--primary-color);
-  border-radius: 50%;
-  z-index: -1;
-  -webkit-transform-origin: top center;
-  transform-origin: top center;
-  -webkit-transform: translateX(-50%) translateY(-5%) scale(0.4);
-  transform: translateX(-50%) translateY(-5%) scale(0.4);
-  -webkit-transition: transform 1s;
-  transition: transform 1s;
-  -moz-transition: transform 1s;
-  -ms-transition: transform 1s;
-  -o-transition: transform 1s;
-  -moz-transform: translateX(-50%) translateY(-5%) scale(0.4);
-  -ms-transform: translateX(-50%) translateY(-5%) scale(0.4);
-  -o-transform: translateX(-50%) translateY(-5%) scale(0.4);
+  height: 100%;
+  width: 100%;
+  background-color: var(--clr-primary);
+  border-radius: 5px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-
-.btn__primary:hover:before {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform: translateX(-45%) translateY(0) scale(1);
-  transform: translateX(-45%) translateY(0) scale(1);
-  -webkit-transform-origin: bottom center;
-  transform-origin: bottom center;
+.btn__secondary:hover {
+  color: var(--clr-white);
 }
-
-.btn__primary:hover {
-  background-color: var(--main-color);
-}
-/* .btn__secondary:hover {
-  color: var(--white-color);
-} */
 .btn__secondary:hover:before {
-  top: -3rem;
-  left: -3rem;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 /* ------------------- */

@@ -179,7 +179,7 @@
 .datepicker-cell:not(.disabled):hover {
   background-color: #8a70d6;
   cursor: pointer;
-  color: #fff;
+  color: #fff !important;
 }
 .datepicker-cell.focused:not(.selected) {
   background-color: #8a70d6;
