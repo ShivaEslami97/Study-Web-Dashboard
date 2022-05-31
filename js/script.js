@@ -19,7 +19,31 @@ function myFunction() {
         header.classList.remove("is-sticky");
     }
 }
-document.addEventListener("scroll", () => {
-    /// sticky menu
-    myFunction();
+// document.addEventListener("scroll", () => {
+//     /// sticky menu
+//     myFunction();
+// });
+
+// menu tabs
+const navLink = document.querySelectorAll('.nav__link');
+navLink.forEach((item, index) => {
+    item.addEventListener('click', function (e) {
+        console.log(item);
+        navLink.forEach(navItem => {
+            navItem.classList.remove('active');
+        });
+        item.classList.add('active');
+    })
+});
+
+// Homework Progress
+const progressItem = document.querySelectorAll('.progress__item');
+
+progressItem.forEach((item, index) => {
+    item.addEventListener('click', function (e) {
+        progressItem.forEach(progress => {
+            progress.classList.remove('progress--active');
+        });
+        item.classList.add('progress--active');
+    })
 });

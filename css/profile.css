@@ -18,6 +18,10 @@
 }
 .profile__body img {
   border-radius: 50%;
+  cursor: pointer;
+}
+.profile__info {
+  cursor: pointer;
 }
 .profile__name {
   font-size: var(--font-size-1xl);
