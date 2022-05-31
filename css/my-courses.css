@@ -57,10 +57,6 @@
   border-top-left-radius: var(--border-radius-2sm);
   border-bottom-left-radius: var(--border-radius-2sm);
 }
-.my-courses__table tr td:first-child,
-.my-courses__table tr th:first-child {
-  padding-left: 0rem;
-}
 
 .my-courses__table tr td:last-child {
   border-top-right-radius: var(--border-radius-2sm);
