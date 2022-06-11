@@ -6,7 +6,7 @@ Redesigned of [dribbble design](<https://dribbble.com/shots/18289015-Study-Web-D
 \
 **Study Web Dashboard** can be used for online applications for education and learning app and softwares.\
 \
-This Template is built using Html5 and Css.
+This Template is built using Html5 and Css and comes with a unique and modern menu and developed with latest trending techniques.
 
 ## Demo
 
@@ -15,7 +15,7 @@ You can see the demo [here](<https://shiva-eslami-study-dashboard.netlify.app/>)
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://user-images.githubusercontent.com/25490229/173187348-bc5a7d9d-dc96-455a-ba0e-e552586d3bfc.jpg)
 
 
 ## Features
