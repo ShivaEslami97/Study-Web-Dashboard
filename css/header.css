@@ -35,3 +35,8 @@
 .header__action {
   gap: 2rem;
 }
+.header__mobile-btn {
+  display: none;
+  color: var(--clr-primary);
+  font-size: var(--font-size-3xl);
+}

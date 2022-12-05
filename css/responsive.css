@@ -1,2 +1,43 @@
 /**** media query  *****/
-@media only screen and (max-width: 1040px) {}
+@media only screen and (max-width: 1040px) {
+  .main {
+    padding-left: 0rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .header__mobile-btn {
+    display: block;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--clr-white);
+    top: 0;
+    left: 0;
+    z-index: 1099;
+    overflow: hidden;
+    -webkit-transform: translate(-100%);
+    -ms-transform: translate(-100%);
+    transform: translate(-100%);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 8px 3px 17px rgb(47 83 109 / 14%);
+  }
+  .nav.active {
+    -webkit-transform: translate(0%);
+    -ms-transform: translate(0%);
+    transform: translate(0%);
+  }
+  .logo {
+    padding: 0px 1.5rem 0em;
+  }
+  .menu-mobile-close {
+    display: block;
+  }
+  .nav__action {
+    display: none;
+  }
+}

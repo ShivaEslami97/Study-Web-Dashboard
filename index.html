@@ -1,325 +1,396 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study Web Dashboard</title>
-    <link rel="shortcut icon" href="images/Web Study Dashboard Favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="css/layout.css">
-</head>
+    <link
+      rel="shortcut icon"
+      href="images/Web Study Dashboard Favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container app__wrapper">
-        <!-- Left sidebar nav start -->
-        <nav class="nav">
-            <div class="logo animate fadeInLeft animate-one">
-                <div class="square__shapes">
-                    <i class="mdi mdi-square square--dark"></i>
-                    <i class="mdi mdi-square square--light"></i>
+      <!-- Left sidebar nav start -->
+      <nav class="nav">
+        <div class="logo animate fadeInLeft animate-one">
+          <div class="square__shapes">
+            <i class="mdi mdi-square square--dark"></i>
+            <i class="mdi mdi-square square--light"></i>
+          </div>
+          <span>Academy</span>
+          <div class="menu-mobile-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="nav__scrollbox scrollbox">
+          <div class="nav__side">
+            <!-- nav -->
+            <ul class="nav__list">
+              <li class="nav__item animate fadeInLeft animate-two">
+                <a class="nav__link active" href="#">
+                  <i class="fa-solid fa-house"></i>
+                  Dashboard</a
+                >
+              </li>
+              <li class="nav__item animate fadeInLeft animate-two">
+                <a class="nav__link" href="#">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  Courses</a
+                >
+              </li>
+              <li class="nav__item animate fadeInLeft animate-two">
+                <a class="nav__link" href="#">
+                  <i class="fa-solid fa-comment"></i>
+                  Chats</a
+                >
+              </li>
+              <li class="nav__item animate fadeInLeft animate-two">
+                <a class="nav__link" href="#">
+                  <i class="fa-solid fa-chart-column"></i>
+                  Grades</a
+                >
+              </li>
+              <li class="nav__item animate fadeInLeft animate-two">
+                <a class="nav__link" href="#">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  Schedule</a
+                >
+              </li>
+              <li class="nav__item animate fadeInLeft animate-two">
+                <a class="nav__link" href="#">
+                  <i class="fa-solid fa-gear"></i>
+                  Settings</a
+                >
+              </li>
+            </ul>
+            <!-- subscription -->
+            <div class="nav__action">
+              <div class="nav__action-media">
+                <img
+                  src="images/working.png"
+                  alt="Premium subscription image"
+                />
+              </div>
+              <h4 class="nav__action-title">Premium subscription</h4>
+              <p class="nav__action-description">
+                Buy Premium and get access to new courses
+              </p>
+              <button class="btn btn__primary nav__action-btn" type="button">
+                <span>More detailed</span>
+                <div class="icon">
+                  <i class="fa-solid fa-angle-right"></i>
                 </div>
-                <span>Academy</span>
+              </button>
             </div>
-            <div class="nav__scrollbox scrollbox">
-                <div class="nav__side">
-                    <!-- nav -->
-                    <ul class="nav__list">
-                        <li class="nav__item animate fadeInLeft animate-two"><a class="nav__link active" href="#">
-                                <i class="fa-solid fa-house"></i>
-                                Dashboard</a></li>
-                        <li class="nav__item animate fadeInLeft animate-two"><a class="nav__link" href="#">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                                Courses</a></li>
-                        <li class="nav__item animate fadeInLeft animate-two"><a class="nav__link" href="#">
-                                <i class="fa-solid fa-comment"></i>
-                                Chats</a></li>
-                        <li class="nav__item animate fadeInLeft animate-two"><a class="nav__link" href="#">
-                                <i class="fa-solid fa-chart-column"></i>
-                                Grades</a></li>
-                        <li class="nav__item animate fadeInLeft animate-two"><a class="nav__link" href="#">
-                                <i class="fa-solid fa-calendar-days"></i>
-                                Schedule</a></li>
-                        <li class="nav__item animate fadeInLeft animate-two"><a class="nav__link" href="#">
-                                <i class="fa-solid fa-gear"></i>
-                                Settings</a></li>
-                    </ul>
-                    <!-- subscription -->
-                    <div class="nav__action">
-                        <div class="nav__action-media">
-                            <img src="images/working.png" alt="Premium subscription image">
-                        </div>
-                        <h4 class="nav__action-title">Premium subscription</h4>
-                        <p class="nav__action-description">Buy Premium and get access to new courses</p>
-                        <button class="btn btn__primary nav__action-btn" type="button">
-                            <span>More detailed</span>
-                            <div class="icon">
-                                <i class="fa-solid fa-angle-right"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- Left sidebar nav end -->
+          </div>
+        </div>
+      </nav>
+      <!-- Left sidebar nav end -->
 
-        <!-- main start -->
-        <main class="main">
-            <div class="main__content">
-                <!-- page top header -->
-                <header id="header" class="header flex">
-                    <div class="header__title animate fadeInDown animate-one">
-                        <h2>Dashboard</h2>
-                    </div>
-                    <div class="header__action flex animate fadeInDown animate-one">
-                        <div class="header__search form-group">
-                            <input class="form-input" placeholder="Search" type="search">
-                            <i class="mdi mdi-magnify"></i>
-                        </div>
-                        <div class="header__notification">
-                            <div class="btn__secondary notification-link" href="#">
-                                <i class="mdi mdi-bell-badge-outline"></i>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                <!-- new courses -->
-                <section class="new-courses">
-                    <h3 class="section-heading animate fadeInDown animate-two">New Courses</h3>
-                    <div class="grid new-courses__wrapper">
-                        <!-- course item -->
-                        <div class="new-courses__item animate fadeInDown animate-one">
-                            <div class="new-courses__media new-courses--one">
-                                <a href="#"><img src="images/2988-ai.png" alt="new courses image"></a>
-                            </div>
-                            <div class="new-courses__content flex">
-                                <h4 class="new-courses__name"><a href="#">Geoghraphy</a></h4>
-                                <span class="new-courses__lessons"><a href="#">12 lessons</a> </span>
-                                <div class="new-courses__footer flex">
-                                    <div class="new-courses__avatars flex">
-                                        <a class="new-courses__avatars-link" href="#">
-                                            <img src="images/avt-2.jpg" alt="new courses avatars"></a>
-                                        <a class="new-courses__avatars-link" href="#">
-                                            <img src="images/avt-3.jpg" alt="new courses avatars"></a>
-                                        <a class="new-courses__avatars-link" href="#">
-                                            <img src="images/avt-4.jpg" alt="new courses avatars"></a>
-                                    </div>
-                                    <button class="btn btn__courses" type="button"><i
-                                            class="fa-solid fa-angle-right"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- course item -->
-                        <div class="new-courses__item animate fadeInDown animate-two">
-                            <div class="new-courses__media new-courses--two">
-                                <a href="#"><img src="images/program.png" alt="courses image"></a>
-                            </div>
-                            <div class="new-courses__content flex">
-                                <h4 class="new-courses__name"><a href="#">JavaScript Course</a></h4>
-                                <span class="new-courses__lessons"><a href="#">15 lessons</a> </span>
-                                <div class="new-courses__footer flex">
-                                    <div class="new-courses__avatars flex">
-                                        <a class="new-courses__avatars-link" href="#">
-                                            <img src="images/avt-1.jpg" alt="new courses avatars"></a>
-                                        <a class="new-courses__avatars-link" href="#">
-                                            <img src="images/avt-6.jpg" alt="new courses avatars"></a>
-                                        <a class="new-courses__avatars-link" href="#">
-                                            <img src="images/avt-5.jpg" alt="new courses avatars"></a>
-                                    </div>
-                                    <button class="btn btn__courses" type="button"><i
-                                            class="fa-solid fa-angle-right"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- course item -->
-                        <div class="new-courses__item animate fadeInDown animate-three">
-                            <div class="new-courses__media new-courses--three">
-                                <a href=""><img src="images/3.png" alt="new-courses image"></a>
-                            </div>
-                            <div class="new-courses__content flex">
-                                <h4 class="new-courses__name"><a href="#">Photography Course</a></h4>
-                                <span class="new-courses__lessons"><a href="#">8 lessons</a> </span>
-                                <div class="new-courses__footer flex">
-                                    <div class="new-courses__avatars flex">
-                                        <a class="new-courses__avatars-link" href="#">
-                                            <img src="images/avt-7.jpg" alt="new-courses avatars"></a>
-                                        <a class="new-courses__avatars-link" href="#">
-                                            <img src="images/avt-8.jpg" alt="new-courses avatars"></a>
-                                        <a class="new-courses__avatars-link" href="#">
-                                            <img src="images/avt-9.jpg" alt="new-courses avatars"></a>
-                                    </div>
-                                    <button class="btn btn__courses" type="button"><i
-                                            class="fa-solid fa-angle-right"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- new courses -->
-                <section class="my-courses">
-                    <div class="section-header flex">
-                        <h3 class="section-heading">My Courses</h3>
-                        <a class="section-link" href="#">View All</a>
-                    </div>
-                    <div class="my-courses__wrapper">
-                        <table class="table my-courses__table">
-                            <thead>
-                                <th>Course name</th>
-                                <th>Date </th>
-                                <th>Rate</th>
-                                <th>Level</th>
-                            </thead>
-                            <tbody>
-                                <!-- 1 -->
-                                <tr>
-                                    <td data-label="Course Name">
-                                        <div class="my-courses__icon">
-                                            <i class="fa-solid fa-object-group"></i>
-                                        </div>
-                                        <div class="my-courses__info">
-                                            <h4 class="my-courses__name">Web Design</h4>
-                                            <p class="my-courses__lessons">10 Lessons</p>
-                                        </div>
-                                    </td>
-                                    <td data-label="Date">May 12</td>
-                                    <td data-label="Rate">4.8</td>
-                                    <td data-label="Level">Elementary</td>
-                                </tr>
-                                <!-- 2 -->
-                                <tr>
-                                    <td data-label="Course Name">
-                                        <div class="my-courses__icon">
-                                            <i class="fa-solid fa-code"></i>
-                                        </div>
-                                        <div class="my-courses__info">
-                                            <h4 class="my-courses__name">Development Basics</h4>
-                                            <p class="my-courses__lessons">8 Lessons</p>
-                                        </div>
-                                    </td>
-                                    <td data-label="Date">May 14</td>
-                                    <td data-label="Rate">4.4</td>
-                                    <td data-label="Level">Intermediate</td>
-                                </tr>
-                                <!-- 3 -->
-                                <tr>
-                                    <td data-label="Course Name">
-                                        <div class="my-courses__icon">
-                                            <i class="fa-solid fa-server"></i>
-                                        </div>
-                                        <div class="my-courses__info">
-                                            <h4 class="my-courses__name">Data with Python</h4>
-                                            <p class="my-courses__lessons">5 lessons</p>
-                                        </div>
-                                    </td>
-                                    <td data-label="Date">May 17</td>
-                                    <td data-label="Rate">4.8</td>
-                                    <td data-label="Level">Elementary</td>
-                                </tr>
-                                <!-- 4 -->
-                                <tr>
-                                    <td data-label="Course Name">
-                                        <div class="my-courses__icon">
-                                            <i class="fa-brands fa-html5"></i>
-                                        </div>
-                                        <div class="my-courses__info">
-                                            <h4 class="my-courses__name">Html Basics</h4>
-                                            <p class="my-courses__lessons">12 lessons</p>
-                                        </div>
-                                    </td>
-                                    <td data-label="Date">May 26</td>
-                                    <td data-label="Rate">4.4</td>
-                                    <td data-label="Level">Elementary</td>
-                                </tr>
-                                <!-- 5 -->
-                                <tr>
-                                    <td data-label="Course Name">
-                                        <div class="my-courses__icon">
-                                            <i class="fa-brands fa-js"></i>
-                                        </div>
-                                        <div class="my-courses__info">
-                                            <h4 class="my-courses__name">JavaScript</h4>
-                                            <p class="my-courses__lessons">8 lessons</p>
-                                        </div>
-                                    </td>
-                                    <td data-label="Date">May 30</td>
-                                    <td data-label="Rate">4.9</td>
-                                    <td data-label="Level">Elementary</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
+      <!-- main start -->
+      <main class="main">
+        <div class="main__content">
+          <!-- page top header -->
+          <header id="header" class="header flex">
+            <div
+              class="header__title flex gap-2 align-items-center animate fadeInDown animate-one"
+            >
+              <div class="header__mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <h2>Dashboard</h2>
             </div>
-            <!-- page left sidebar -->
-            <aside class="side-content">
-                <div class="profile">
-                    <div class="profile__header flex">
-                        <h3>Profile</h3>
-                        <div class="btn__secondary notification-link" href="#">
-                            <i class="mdi mdi-account-edit-outline"></i>
-                        </div>
-                    </div>
-                    <div class="profile__body">
-                        <img src="images/avt-5.jpg" alt="profile image">
-                        <div class="profile__info">
-                            <h4 class="profile__name">Shiva Eslami
-                                <i class="mdi mdi-check-circle"></i>
-                            </h4>
-                            <p class="profile__level">Elementary</p>
-                        </div>
-                    </div>
+            <div class="header__action flex animate fadeInDown animate-one">
+              <div class="header__search form-group">
+                <input class="form-input" placeholder="Search" type="search" />
+                <i class="mdi mdi-magnify"></i>
+              </div>
+              <div class="header__notification">
+                <div class="btn__secondary notification-link" href="#">
+                  <i class="mdi mdi-bell-badge-outline"></i>
                 </div>
-                <div class="date-picker">
-                    <div id="inline">
-                    </div>
+              </div>
+            </div>
+          </header>
+          <!-- new courses -->
+          <section class="new-courses">
+            <h3 class="section-heading animate fadeInDown animate-two">
+              New Courses
+            </h3>
+            <div class="grid new-courses__wrapper">
+              <!-- course item -->
+              <div class="new-courses__item animate fadeInDown animate-one">
+                <div class="new-courses__media new-courses--one">
+                  <a href="#"
+                    ><img src="images/2988-ai.png" alt="new courses image"
+                  /></a>
                 </div>
-                <!-- Homework Progress -->
-                <div class="progress">
-                    <h3 class="section-heading">Homework Progress</h3>
-                    <div class="progress__wrapper">
-                        <!-- progress item 1 -->
-                        <div class="progress__item">
-                            <div class="progress__circle progress--65">
-                                <span>65%</span>
-                            </div>
-                            <div class="progress__data">
-                                <h4>Styling with CSS</h4>
-                                <p>12 tasks </p>
-                            </div>
-                            <a class="progress__link" href="#"><i class="fa-solid fa-angle-right"></i></a>
-                        </div>
-                        <!-- progress item 2 -->
-                        <div class="progress__item">
-                            <div class="progress__circle progress--50">
-                                <span>50%</span>
-                            </div>
-                            <div class="progress__data">
-                                <h4>Basics of Programming</h4>
-                                <p>18 tasks </p>
-                            </div>
-                            <a class="progress__link" href="#"><i class="fa-solid fa-angle-right"></i></a>
-                        </div>
-                        <!-- progress item 3 -->
-                        <div class="progress__item">
-                            <div class="progress__circle progress--25">
-                                <span>25%</span>
-                            </div>
-                            <div class="progress__data">
-                                <h4>Learn to Program in Java</h4>
-                                <p>10 tasks </p>
-                            </div>
-                            <a class="progress__link" href="#"><i class="fa-solid fa-angle-right"></i></a>
-                        </div>
+                <div class="new-courses__content flex">
+                  <h4 class="new-courses__name"><a href="#">Geoghraphy</a></h4>
+                  <span class="new-courses__lessons"
+                    ><a href="#">12 lessons</a>
+                  </span>
+                  <div class="new-courses__footer flex">
+                    <div class="new-courses__avatars flex">
+                      <a class="new-courses__avatars-link" href="#">
+                        <img src="images/avt-2.jpg" alt="new courses avatars"
+                      /></a>
+                      <a class="new-courses__avatars-link" href="#">
+                        <img src="images/avt-3.jpg" alt="new courses avatars"
+                      /></a>
+                      <a class="new-courses__avatars-link" href="#">
+                        <img src="images/avt-4.jpg" alt="new courses avatars"
+                      /></a>
                     </div>
+                    <button class="btn btn__courses" type="button">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                  </div>
                 </div>
-            </aside>
-
-        </main>
-        <!-- main  end -->
+              </div>
+              <!-- course item -->
+              <div class="new-courses__item animate fadeInDown animate-two">
+                <div class="new-courses__media new-courses--two">
+                  <a href="#"
+                    ><img src="images/program.png" alt="courses image"
+                  /></a>
+                </div>
+                <div class="new-courses__content flex">
+                  <h4 class="new-courses__name">
+                    <a href="#">JavaScript Course</a>
+                  </h4>
+                  <span class="new-courses__lessons"
+                    ><a href="#">15 lessons</a>
+                  </span>
+                  <div class="new-courses__footer flex">
+                    <div class="new-courses__avatars flex">
+                      <a class="new-courses__avatars-link" href="#">
+                        <img src="images/avt-1.jpg" alt="new courses avatars"
+                      /></a>
+                      <a class="new-courses__avatars-link" href="#">
+                        <img src="images/avt-6.jpg" alt="new courses avatars"
+                      /></a>
+                      <a class="new-courses__avatars-link" href="#">
+                        <img src="images/avt-5.jpg" alt="new courses avatars"
+                      /></a>
+                    </div>
+                    <button class="btn btn__courses" type="button">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- course item -->
+              <div class="new-courses__item animate fadeInDown animate-three">
+                <div class="new-courses__media new-courses--three">
+                  <a href=""
+                    ><img src="images/3.png" alt="new-courses image"
+                  /></a>
+                </div>
+                <div class="new-courses__content flex">
+                  <h4 class="new-courses__name">
+                    <a href="#">Photography Course</a>
+                  </h4>
+                  <span class="new-courses__lessons"
+                    ><a href="#">8 lessons</a>
+                  </span>
+                  <div class="new-courses__footer flex">
+                    <div class="new-courses__avatars flex">
+                      <a class="new-courses__avatars-link" href="#">
+                        <img src="images/avt-7.jpg" alt="new-courses avatars"
+                      /></a>
+                      <a class="new-courses__avatars-link" href="#">
+                        <img src="images/avt-8.jpg" alt="new-courses avatars"
+                      /></a>
+                      <a class="new-courses__avatars-link" href="#">
+                        <img src="images/avt-9.jpg" alt="new-courses avatars"
+                      /></a>
+                    </div>
+                    <button class="btn btn__courses" type="button">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- new courses -->
+          <section class="my-courses">
+            <div class="section-header flex">
+              <h3 class="section-heading">My Courses</h3>
+              <a class="section-link" href="#">View All</a>
+            </div>
+            <div class="my-courses__wrapper">
+              <table class="table my-courses__table">
+                <thead>
+                  <th>Course name</th>
+                  <th>Date</th>
+                  <th>Rate</th>
+                  <th>Level</th>
+                </thead>
+                <tbody>
+                  <!-- 1 -->
+                  <tr>
+                    <td data-label="Course Name">
+                      <div class="my-courses__icon">
+                        <i class="fa-solid fa-object-group"></i>
+                      </div>
+                      <div class="my-courses__info">
+                        <h4 class="my-courses__name">Web Design</h4>
+                        <p class="my-courses__lessons">10 Lessons</p>
+                      </div>
+                    </td>
+                    <td data-label="Date">May 12</td>
+                    <td data-label="Rate">4.8</td>
+                    <td data-label="Level">Elementary</td>
+                  </tr>
+                  <!-- 2 -->
+                  <tr>
+                    <td data-label="Course Name">
+                      <div class="my-courses__icon">
+                        <i class="fa-solid fa-code"></i>
+                      </div>
+                      <div class="my-courses__info">
+                        <h4 class="my-courses__name">Development Basics</h4>
+                        <p class="my-courses__lessons">8 Lessons</p>
+                      </div>
+                    </td>
+                    <td data-label="Date">May 14</td>
+                    <td data-label="Rate">4.4</td>
+                    <td data-label="Level">Intermediate</td>
+                  </tr>
+                  <!-- 3 -->
+                  <tr>
+                    <td data-label="Course Name">
+                      <div class="my-courses__icon">
+                        <i class="fa-solid fa-server"></i>
+                      </div>
+                      <div class="my-courses__info">
+                        <h4 class="my-courses__name">Data with Python</h4>
+                        <p class="my-courses__lessons">5 lessons</p>
+                      </div>
+                    </td>
+                    <td data-label="Date">May 17</td>
+                    <td data-label="Rate">4.8</td>
+                    <td data-label="Level">Elementary</td>
+                  </tr>
+                  <!-- 4 -->
+                  <tr>
+                    <td data-label="Course Name">
+                      <div class="my-courses__icon">
+                        <i class="fa-brands fa-html5"></i>
+                      </div>
+                      <div class="my-courses__info">
+                        <h4 class="my-courses__name">Html Basics</h4>
+                        <p class="my-courses__lessons">12 lessons</p>
+                      </div>
+                    </td>
+                    <td data-label="Date">May 26</td>
+                    <td data-label="Rate">4.4</td>
+                    <td data-label="Level">Elementary</td>
+                  </tr>
+                  <!-- 5 -->
+                  <tr>
+                    <td data-label="Course Name">
+                      <div class="my-courses__icon">
+                        <i class="fa-brands fa-js"></i>
+                      </div>
+                      <div class="my-courses__info">
+                        <h4 class="my-courses__name">JavaScript</h4>
+                        <p class="my-courses__lessons">8 lessons</p>
+                      </div>
+                    </td>
+                    <td data-label="Date">May 30</td>
+                    <td data-label="Rate">4.9</td>
+                    <td data-label="Level">Elementary</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+        <!-- page left sidebar -->
+        <aside class="side-content">
+          <div class="profile">
+            <div class="profile__header flex">
+              <h3>Profile</h3>
+              <div class="btn__secondary notification-link" href="#">
+                <i class="mdi mdi-account-edit-outline"></i>
+              </div>
+            </div>
+            <div class="profile__body">
+              <img src="images/avt-5.jpg" alt="profile image" />
+              <div class="profile__info">
+                <h4 class="profile__name">
+                  Shiva Eslami
+                  <i class="mdi mdi-check-circle"></i>
+                </h4>
+                <p class="profile__level">Elementary</p>
+              </div>
+            </div>
+          </div>
+          <div class="date-picker">
+            <div id="inline"></div>
+          </div>
+          <!-- Homework Progress -->
+          <div class="progress">
+            <h3 class="section-heading">Homework Progress</h3>
+            <div class="progress__wrapper">
+              <!-- progress item 1 -->
+              <div class="progress__item">
+                <div class="progress__circle progress--65">
+                  <span>65%</span>
+                </div>
+                <div class="progress__data">
+                  <h4>Styling with CSS</h4>
+                  <p>12 tasks</p>
+                </div>
+                <a class="progress__link" href="#"
+                  ><i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+              <!-- progress item 2 -->
+              <div class="progress__item">
+                <div class="progress__circle progress--50">
+                  <span>50%</span>
+                </div>
+                <div class="progress__data">
+                  <h4>Basics of Programming</h4>
+                  <p>18 tasks</p>
+                </div>
+                <a class="progress__link" href="#"
+                  ><i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+              <!-- progress item 3 -->
+              <div class="progress__item">
+                <div class="progress__circle progress--25">
+                  <span>25%</span>
+                </div>
+                <div class="progress__data">
+                  <h4>Learn to Program in Java</h4>
+                  <p>10 tasks</p>
+                </div>
+                <a class="progress__link" href="#"
+                  ><i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </main>
+      <!-- main  end -->
     </div>
     <script src="js/date-picker.js"></script>
     <script src="js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
